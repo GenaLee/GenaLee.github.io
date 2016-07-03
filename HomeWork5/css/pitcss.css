@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background-color: lightgrey;
+}
+
+.rectangle {
+    height: 571px;
+    width: 480px;
+    background-color: white;
+    border: 1px solid grey;
+    position: fixed;
+    left: 50%;
+    margin-left: -240px;
+    top: 10px;
+}
+
+table {
+    position: fixed;
+    top: 12px;
+    width: 480px;
+    height: 570px;
+    border-collapse: collapse;
+    border: 11px solid white;
+}
+
+tr {
+    height: 5%;
+}
+
+td {
+    width: auto;
+    border: 10px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+.yel {
+    background-color: yellow;
+}
+
+.rd {
+    background-color: red;
+    width: 60%;
+}
+
+.blck {
+    background-color: black;
+}
+
+.bl {
+    background-color: darkblue;
+}
