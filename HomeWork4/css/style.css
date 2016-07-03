@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("../img/main_background.jpg");
+    background-size: cover;
+    background-color: black;
+    background-attachment: fixed;
+    background-repeat: none;
+}
+
+.total_block {
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    left: 150px;
+    width: 78%;
+    margin-bottom: 30px;
+    background-color: white;
+    color: black;
+    box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.78);
+}
+
+header {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 410px;
+}
+
+.logo {
+    float: left;
+    top: 30px;
+    margin-left: 30px;
+    margin-top: 12px;
+}
+
+.topleftblock {
+    float: right;
+    width: 50%;
+}
+
+.contacts {
+    display: inline-block;
+    list-style: none;
+    color: #128aa7;
+    font-size: 12px;
+    font-family: Tahoma;
+    margin-right: 30px;
+    margin-top: 10px;
+    float: right;
+}
+
+.contacts li {
+    padding-bottom: 2px;
+}
+
+.contact_titul {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.contacts li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #128aa7;
+}
+
+.flags {
+    margin-right: 30px;
+    margin-top: 30px;
+    float: right;
+    list-style: none;
+}
+
+.flags li {
+    float: left;
+    padding-left: 5px;
+}
+
+.flags li a {
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 54px;
+    color: #128aa7;
+    font-family: Tahoma;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.flags .india a {
+    background-image: url(../img/india.png);
+}
+
+.flags .nepal a {
+    background-image: url(../img/nepal.png);
+}
+
+.flags .tibet a {
+    background-image: url(../img/tibet.png);
+}
+
+.flags .butan a {
+    background-image: url(../img/butan.png);
+}
+
+.flags .shrilanka a {
+    background-image: url(../img/shrilanka.png);
+}
+
+.flags .maldivs a {
+    background-image: url(../img/maldivs.png);
+}
+
+.central-photo {
+    size: auto;
+    height: 235px;
+    width: 100%;
+    border: solid 1px #138aa7;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+.clearfix {
+    clear: both;
+    display: block;
+}
+
+menu {
+    margin-top: 2px;
+    box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.78);
+    z-index: 10;
+    position: relative;
+    height: 28px;
+}
+
+ul.menu {
+    list-style: none;
+    background-color: #343434;
+    display: block;
+    border: solid 1px black;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    width: 100%;
+}
+
+ul.menu:after {
+    clear: both;
+    content: ' ';
+    float: none;
+    display: block;
+}
+
+ul.menu li {
+    float: left;
+    position: relative;
+    width: 14%;
+}
+
+ul.menu li a {
+    display: block;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #343434;
+    color: white;
+    font-size: 14px;
+    font-family: Tahoma;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 150px;
+    top: 28px;
+    left: 0;
+    background-color: #343434;
+    box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.78);
+}
+
+ul.submenu li {
+    display: block;
+    width: 100%;
+}
+
+ul.submenu li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: #343434;
+    text-decoration: none;
+}
+
+ul.menu li:hover ul.submenu {
+    display: block;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.info {
+    flex: 1 20%;
+    background-color: #edeef0;
+    text-align: justify;
+    padding: 10px;
+    border: 1px solid #c7cacf;
+}
+
+.data {
+    flex: 2 60%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: white;
+    text-align: justify;
+}
+
+.news {
+    flex: 3 20%;
+    background-color: #edeef0;
+    text-align: justify;
+    padding: 10px;
+    border: 1px solid #c7cacf;
+}
+
+footer {
+    color: white;
+    font: 12px Tahoma;
+    text-align: center;
+    /*position: fixed;*/
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: 10px;
+}
+.clearfix{
+    clear: both;
+    display: block;
+}
