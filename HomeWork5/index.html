@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastre</title>
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.6";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+</head>
+
+<body>
+    <header class="clearfix">
+        <ul class="menu2">
+            <li>Minhas Ofertas</li>
+            <li>Ola! <a href="#">Entrar</a> ou <a href="#">Cadastre-se</a></li>
+        </ul>
+        <div class="flajok">
+            <img src="img/flajok.png" alt="flajok">
+        </div>
+        <div class="justline"></div>
+        <ul class="menu1">
+            <li><a href="#">Meu YouBike </a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Ajuda</a></li>
+        </ul>
+    </header>
+    <div class="wrapper">
+        <div class="reg_form clearfix">
+            <div class="form_titul">Cadastre-se</div>
+            <div class="fbblock clearfix">
+                <div class="fblogo"></div>
+                <div class="fbbutton"></div>
+                <div class="fbline"></div>
+            </div>
+            <div class="ouline">OU</div>
+            <div class="qform">
+                <form action="" method="POST">
+                    <input type="text" name="firstname" placeholder="First Name">
+                    <input type="text" name="lastname" placeholder="Last Name">
+                    <input type="text" name="email" placeholder="Email Address">
+                    <input type="password" name="pswd" placeholder="Choose Password">
+                    <input type="password" name="confirmpswd" placeholder="Password Confirm">
+                    <input type="checkbox" class="chb" name="sendme" id="chbid">
+                    <label for="chbid"> Send me Yourbike updates and tips</label>
+                    <input type="submit" class="btn" value="Create My Account">
+                </form>
+                <p>By clicking the button above, you agree to the Terms of Service</p>
+                <p>Xiew our Privacy Policy.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
