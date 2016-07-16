@@ -23,18 +23,12 @@ margin: 17px auto 5px auto;
 width: 100%;
 }
 .phones{
-	display: inline-block;
 	color: #5e696d;
 	font-family: Arial;
 	font-size: 18px;
 	text-align: center;
 	/*line-height: 21px;*/
 	height: 21px;
-	vertical-align: middle;
-}
-.phones span{
-height: 21px;
-line-height: 21px;
 }
 
 .phone_pic{
