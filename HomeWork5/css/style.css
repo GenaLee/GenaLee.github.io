@@ -190,7 +190,7 @@ header {
 }
 
 form input {
-    width: 90%;
+    width: 100%;
     padding: 0 5%;
     height: 30px;
     color: white;
@@ -200,6 +200,7 @@ form input {
     border-bottom: 1px solid darkgrey;
     margin: 0 auto;
     margin-bottom: 15px;
+    box-sizing: border-box;
 }
 
 .chb {
