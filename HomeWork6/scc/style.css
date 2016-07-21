@@ -254,8 +254,11 @@ aside{
 	flex-basis: 190px;
 }
 
+.right{
+	/*padding-left: 15px;*/
+}
 
-.left .icon{
+.icon{
  background: rgba(12,50,86,1);
 background: -moz-linear-gradient(top, rgba(12,50,86,1) 0%, rgba(32,105,136,1) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(12,50,86,1)), color-stop(100%, rgba(32,105,136,1)));
@@ -266,26 +269,34 @@ background: linear-gradient(to bottom, rgba(12,50,86,1) 0%, rgba(32,105,136,1) 1
 width: 20px;
 height: 20px;
 border-radius: 11px;
-
+margin: 0 5px 0 3px;
+color: white;
+font-size: 25px;
+text-align: center;
+line-height: 25px;
 display: flex;
 align-items: center;
 justify-content: center;
 }
 
-.left .leftmenutitle{
+.menutitle{
 	border: 1px solid grey;
 	border-radius: 25px;
 	height: 25px;
 	width: 95%;
 	display: flex;
-	justify-content: space-around;
+	justify-content: flex-start;
 	align-items: center;
 	-webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
 box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+margin: 0 0 15px 0;
 }
 
-.leftmenutitle span{
+.right .menutitle{
+	width: 100%;
+}
+.menutitle span{
 	font-family: Lucida, Arial;
 	font-size: 13px;
 	color: #114165;
@@ -302,10 +313,10 @@ background: -o-linear-gradient(top, rgba(201,207,209,1) 0%, rgba(35,75,93,1) 100
 background: -ms-linear-gradient(top, rgba(201,207,209,1) 0%, rgba(35,75,93,1) 100%);
 background: linear-gradient(to bottom, rgba(201,207,209,1) 0%, rgba(35,75,93,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9cfd1', endColorstr='#234b5d', GradientType=0 );
-
+margin: 0 10px 0 0;
 }
 
-.submenu .submenutitle {
+.submenutitle {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -313,7 +324,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9cfd1', end
 	border-radius: 25px;
 	height: 25px;
 	width: 100%;
-	margin: 15px 0 0 5px;
+	margin: 0 0 0 10px;
 	
 
 }
@@ -323,29 +334,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9cfd1', end
 	color: #041d36;
 	margin-right: 3px;
 }
-.submenutitle .icon{
-background: rgba(12,50,86,1);
-background: -moz-linear-gradient(top, rgba(12,50,86,1) 0%, rgba(32,105,136,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(12,50,86,1)), color-stop(100%, rgba(32,105,136,1)));
-background: -webkit-linear-gradient(top, rgba(12,50,86,1) 0%, rgba(32,105,136,1) 100%);
-background: -o-linear-gradient(top, rgba(12,50,86,1) 0%, rgba(32,105,136,1) 100%);
-background: -ms-linear-gradient(top, rgba(12,50,86,1) 0%, rgba(32,105,136,1) 100%);
-background: linear-gradient(to bottom, rgba(12,50,86,1) 0%, rgba(32,105,136,1) 100%);
-width: 20px;
-height: 20px;
-border-radius: 11px;
-margin: 0 5px 0 3px;
-color: white;
-font-size: 25px;
-text-align: center;
-line-height: 25px;
-}
 
 .submenu{
 	width: 75%;
 }
 .submenu ul{
 	list-style: circle;
+	padding-left: 35px;
+	width: 100%;
 }
 .submenu ul li{
 text-align: left;
@@ -364,4 +360,26 @@ text-align: left;
 	text-decoration: underline;
 	font-weight: bold;
 	font-style: italic;
+}
+
+form{
+	width: 100%;
+
+}
+
+input{
+	width: 100$;
+	height: 12px;
+	display: block;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+p label {
+	text-align: left;
+	font-family: Lucida, Arial;
+	font-size: 13px;
+	color: #465961;
+	line-height: 26px;
+
 }
