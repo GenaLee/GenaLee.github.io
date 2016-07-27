@@ -71,6 +71,7 @@ box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
 	margin: auto 0 auto 8px;
 	box-sizing: border-box;
 	width: 100px;
+	padding: 0 3px 0 3px;
 }
 .auth_line{
 	color: white;
@@ -122,8 +123,8 @@ box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
 	position: absolute;
 	background-color: #041d36;
 	width: 265px;
-	margin:auto 0;
-	margin-top: 60px;
+	left: 0;
+	top: 60px;
 	display: block;
 	height: 80px;
 	padding: 30px 0 0 0;
@@ -193,11 +194,10 @@ box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
 	height: 24px;
 	text-align: center;	
 	padding: 6 20px 0 20px;
-	/*border: 1px solid white;*/
 	border-radius: 15px;
-	margin: 6 20px 0 20px;
 	width: 18%;
 	line-height: 24px;
+	vertical-align: middle;
 }
 
 .menulist li:hover{
@@ -304,6 +304,14 @@ margin: 0 0 15px 0;
 	margin-right: 3px;
 }
 
+.menutitle h4{
+	font-family: Lucida, Arial;
+	font-size: 13px;
+	color: #114165;
+	margin-right: 3px;
+	font-weight: normal;
+}
+
 .mainblock{
   width: 525px;
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e4e7e8+0,e4e7e8+3,93a7b0+99 */
@@ -378,11 +386,12 @@ border-radius: 5px;
 	
 
 }
-.submenutitle span{
+.submenutitle h4{
 	font-family: Lucida, Arial;
 	font-size: 14px;
 	color: #041d36;
 	margin-right: 3px;
+	font-weight: normal;
 }
 
 .submenu{
