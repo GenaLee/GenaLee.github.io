@@ -1,0 +1,90 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "LeagueGothicRegular", Arial;
+}
+
+header{
+	/*height: 850px;*/
+	background: url(../img/background.jpg) no-repeat fixed center -265px;
+	background-size: cover;
+	/*background-repeat: no-repeat;*/
+	
+}
+
+.header__top{
+	margin: 0 auto;
+		width: 960px;
+		height: 150px;
+	display: flex;
+flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	
+
+}
+.clearfix: after{
+	display: block;
+	clear: both;
+}
+.top__logo{
+		white-space: nowrap;		
+		color: white;
+		height: 50px;
+		line-height: 70px;
+		position: relative;
+		/*top:50px;*/
+}
+
+.logo__dot{
+	position: absolute;
+	left: 12px;
+	top: -5px;
+	
+}
+.logo__txt{
+	display: inline;
+	/*font-family: "LeagueGothicRegular", Arial;*/
+	font-size: 48px;
+	color: white;
+	font-weight: normal;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.logo__grad{
+  background: -webkit-linear-gradient(#745083, #322539);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: -2px;
+}
+
+.top__navi{
+	list-style: none;
+}
+
+.navi__item{
+	float: left;
+	margin: 0 25px;
+}
+
+.navi__link{
+	text-decoration: none;
+	color: white;
+	font-weight: normal;
+	display: block;
+	font-size: 24px;
+	line-height: 24px;
+	text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.4);
+	box-sizing: border-box;
+
+ }
+.navi__link:hover{
+	border-bottom: 2px solid #edbfff;
+}
+
+.container{
+	height: 600px;
+	background-color: red;
+	/*margin-top: 850px;*/
+}
