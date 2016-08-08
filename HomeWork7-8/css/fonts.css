@@ -8,3 +8,21 @@
     font-style: normal;
     font-weight: normal;
 }
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/OpenSansLight/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/OpenSansLight/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url('../fonts/OpenSansBold/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/OpenSansBold/opensans-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

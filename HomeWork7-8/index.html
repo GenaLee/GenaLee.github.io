@@ -3,17 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'> -->
 </head>
 <body>
-		
+	<div class="main_wrapper">
 	<header class="header clearfix">
 		<div class="header__top top">
 			<div class="top__logo logo">
 				<img class="logo__dot"	src="img/i.png" alt="i">
 				<h2 class="logo__txt">PINGBULL</h2>
-				<h2 class="logo__txt logo__grad">ER</h2>
+				<h2 class="logo__txt logo__txt--grad">ER</h2>
 			</div>
 			<ul class="top__navi navi">
 				<li class="navi__item"><a class="navi__link" href="#">HOME</a></li>
@@ -23,11 +25,220 @@
 				<li class="navi__item"><a class="navi__link" href="#">LOREM IPSUM</a></li>
 				<li class="navi__item"><a class="navi__link" href="#">DOLOR SIT AMET</a></li>		
 			</ul>
+			<ul class="top__navi top__navi--dropdown navi">
+			<li class="navi__item navi__item--dropdown clearfix"><a href="#" class="navi__link navi__link--dropdown">HOME</a>
+			
+				<ul class="subnavi">
+				<li class="subnavi__item"><a class="navi__link navi__link--subitem" href="#about">ABOUT</a></li>
+				<li class="subnavi__item"><a class="navi__link navi__link--subitem" href="#">BLOG</a></li>
+				<li class="subnavi__item"><a class="navi__link navi__link--subitem" href="#">PRODUCTS</a></li>
+				<li class="subnavi__item"><a class="navi__link navi__link--subitem" href="#">LOREM IPSUM</a></li>
+				<li class="subnavi__item"><a class="navi__link navi__link--subitem navi__link--last" href="#">DOLOR SIT AMET</a></li>	
+				</ul>
+
+			</li>
+				
+			</ul>
 		</div>
+
+	<div class="headslider clearfix">
+	<div class="headslider__wrapper sliderwrapper clearfix">
+		<section class="sliderwrapper__text headertext">
+			<h1 class="headertext__h1">Lorem ipsum dolor</h1>	
+			<h3 class="headertext__h3">It will make all of your dreams come true</h3>
+			<h6 class="headertext__h6">Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</h6>
+		</section>
+		<div class="sliderwrapper__iphones iphone clearfixx">
+		<!-- <img src="img/iphones.png" alt=""> -->
+		<!-- <img src="img/iPhone.png" alt=""> -->
+		 <!-- <div class="iphone__bigiphone bigiphone">
+			<img class="bigiphone__img"	src="img/iPhone.png" alt="iphone">
+			<img class="bigiphone__play" src="img/playbtn.png" alt="play">
+		 </div>
+		
+			<img class="iphone__smalliphone" src="img/iPhone.png" alt="iphone"> -->
+		</div>
+	</div>
+		
+	</div>
+	<div class="radiowrapper">
+		
+	<div class="radiowrapper__radioslider radioslider">
+		<input class="radioslider__r" type="radio" name="sliderradio" id="id1">
+		<label class="radioslider__label" for="id1"></label>
+		<input class="radioslider__r" type="radio" name="sliderradio" id ="id2">
+		<label class="radioslider__label" for="id2"></label>
+		<input class="radioslider__r" type="radio" name="sliderradio" id ="id3">
+		<label class="radioslider__label" for="id3"></label>
+		<input class="radioslider__r" type="radio" name="sliderradio" id ="id4">
+		<label class="radioslider__label" for="id4"></label>
+	</div>	
+	</div>
 	</header>
-	<div class="container">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, voluptatibus eaque repellendus fuga delectus mollitia. Cum nostrum quae aliquid repellat, modi fugit alias necessitatibus neque eos! Sapiente molestiae facere doloribus.
+
+	<article class="bodywrapper">
+		
+	<div class="container container--top">
+		<section class="container__item top_conteiner" id="about">
+			
+		<div class="top_conteiner__item top_item">
+		<h3 class="top_item__title">ABOUT OUR COMPANY</h3>
+		<h6 class="top_item__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</h6>
+		<h4 class="top_item__footer"><a class="top_item__link" href="">READ MORE</a>
+		</h4>
+		<div class="top_item__img top_item__img--first"></div>
+		</div>
+		<div class="top_conteiner__item top_item clearfix">
+		<h3 class="top_item__title">ABOUT OUR COMPANY</h3>
+		<h6 class="top_item__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</h6>
+		<h4 class="top_item__footer"><a class="top_item__link" href="">READ MORE</a></h4>
+		<div class="top_item__img top_item__img--second"></div>
+		</div>
+		<div class="top_conteiner__item top_item top_container__item--right">
+		<h3 class="top_item__title">ABOUT OUR COMPANY</h3>
+		<h6 class="top_item__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</h6>
+		<h4 class="top_item__footer"><a class="top_item__link" href="#">READ MORE</a></h4>
+		<div class="top_item__img top_item__img--third"></div>
+		</div>
+		</section>
 	</div>
 
+	<div class="container container--middle">
+		<section class="container__item middle_conteiner">
+			<div class="middle_conteiner__item middle_conteiner__item--left testimonials">
+			 <div class="testimonials__comment comment"> 	
+			 <div class="comment__title com_title">
+			 <h3 class="com_title__title1">PINGBULLER</h3>
+			 <h3 class="com_title__title2">STARTS HERE</h3>
+			 </div>
+				<h6 class="comment__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</h6>
+				<div class="comment__pic">	
+				</div>
+			 </div>
+
+<div class="radiowrapper radiowrapper--bw">
+		
+	<div class="radiowrapper__radioslider--bw radioslider">
+		<input class="radioslider__r radioslider__r--bw" type="radio" name="sliderradio" id="bwid1">
+		<label class="radioslider__label radioslider__label--bw" for="bwid1"></label>
+		<input class="radioslider__r radioslider__r--bw" type="radio" name="sliderradio" id ="bwid2">
+		<label class="radioslider__label radioslider__label--bw" for="bwid2"></label>
+		<input class="radioslider__r radioslider__r--bw" type="radio" name="sliderradio" id ="bwid3">
+		<label class="radioslider__label radioslider__label--bw" for="bwid3"></label>
+		<input class="radioslider__r radioslider__r--bw" type="radio" name="sliderradio" id ="bwid4">
+		<label class="radioslider__label radioslider__label--bw" for="bwid4"></label>
+	</div>	
+	</div>
+	
+
+
+			</div>
+
+			<div class="middle_conteiner__item middle_conteiner__item--right from_blog clearfix">
+			<h3 class="from_blog__title">RECENT UPDATES</h3>
+				
+				<ul class="from_blog__list blog_list">
+					<li class="blog_list__item blog_item">
+						<div class="blog_item__pic blog_item__pic--first"></div>
+						<div class="blog_item__text item_text">
+						<h4 class="item_text__bold">Nunc turpis neque feugiat eget</h4>
+						<h4 class="item_text__normal">Posted by Admin on March 13 2012 in Recent News</h4>
+						</div>
+					</li>
+			<li class="blog_list__item blog_item">
+						<div class="blog_item__pic blog_item__pic--second"></div>
+						<div class="blog_item__text item_text">
+						<h4 class="item_text__bold">Nunc turpis neque feugiat eget</h4>
+						<h4 class="item_text__normal">Posted by Admin on March 13 2012 in Recent News</h4>
+						</div>
+					</li>
+					<li class="blog_list__item blog_item">
+						<div class="blog_item__pic blog_item__pic--third"></div>
+						<div class="blog_item__text item_text">
+						<h4 class="item_text__bold">Nunc turpis neque feugiat eget</h4>
+						<h4 class="item_text__normal">Posted by Admin on March 13 2012 in Recent News</h4>
+						</div>
+					</li>
+				</ul>
+				<a class="from_blog__link from_blog__link--960" href="#">READ MORE HERE</a>
+				<a class="from_blog__link from_blog__link--768" href="#">MORE BLOG POSTS</a>
+			</div>
+		</section>
+	</div>		
+
+<div class="container container--brends">
+		<section class="container__item container__item--brends brends_conteiner">
+		
+			<div class="brends_conteiner__pic brends_conteiner__pic--first"></div>
+			<div class="brends_conteiner__pic brends_conteiner__pic--second"></div>
+			<div class="brends_conteiner__pic brends_conteiner__pic--third"></div>
+			<div class="brends_conteiner__pic brends_conteiner__pic--fourth"></div>
+			<div class="brends_conteiner__pic brends_conteiner__pic--fifth"></div>
+			<div class="brends_conteiner__pic brends_conteiner__pic--six"></div>
+		</section>
+	</div>	
+
+<footer class="container container--footer">
+	<section class="container__item container__item--footer footer">
+
+	<div class="top_conteiner__item top_conteiner__item--footer footer_item">
+		<div class="footer_item__title title_name">
+		<h3 class="title_name__text">PIGBULL</h3>
+		<h3 class="title_name__text title_name__text--er">ER</h3>
+		</div>
+		<p class="footer_item__copy">Copyright 2013, Pingbull AS</p>
+
+		<h6 class="top_item__text top_item__text--footer">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</h6>
+		</div>
+		
+		<div class="top_conteiner__item top_conteiner__item--footer top_item">
+		<h3 class="top_item__title top_item__title--footer">RECENT COMMENTS</h3>
+		<h6 class="top_item__text top_item__text--footer1">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</h6>
+		</div>
+		<div class="top_conteiner__item top_item top_conteiner__item--footer top_container__item--right">
+		<h3 class="top_item__title top_item__title--footer" >NEWS CATEGORIES</h3>
+		<h6 class="top_item__text top_item__text--footer1">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</h6>
+		</div>	
+
+		<div class="top_conteiner__item top_item top_conteiner__item--footer768">
+		<h3 class="top_item__title top_item__title--footer">NEWS CATEGORIES</h3>
+		<h6 class="top_item__text top_item__text--footer1">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</h6>
+		</div>
+
+		<div class="top_conteiner__item top_item top_conteiner__item--footer768">
+		<h3 class="top_item__title top_item__title--footer" >NEWS CATEGORIES</h3>
+		<h6 class="top_item__text top_item__text--footer1">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</h6>
+		</div>
+
+<div class="top_conteiner__item top_item top_conteiner__item--footer768">
+		<h3 class="top_item__title top_item__title--footer" >NEWS CATEGORIES</h3>
+		<h6 class="top_item__text top_item__text--footer1">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</h6>
+		</div>
+
+	</section>
+
+</footer>
+
+<footer class="container container--footermenu clearfix">
+ <div class="footerwrapper">
+ </div>
+ 	
+	<section class="container__item container__item--footermenu footermenu">
+
+			<ul class="top__navi top__navi--footer navi">
+				<li class="navi__item"><a class="navi__link navi__link--footer" href="#">HOME</a></li>
+				<li class="navi__item"><a class="navi__link navi__link--footer" href="#">ABOUT</a></li>
+				<li class="navi__item"><a class="navi__link navi__link--footer" href="#">BLOG</a></li>
+				<li class="navi__item"><a class="navi__link navi__link--footer" href="#">PRODUCTS</a></li>
+				<li class="navi__item"><a class="navi__link navi__link--footer" href="#">LOREM IPSUM</a></li>
+				<li class="navi__item"><a class="navi__link navi__link--footer" href="#">DOLOR SIT AMET</a></li>		
+			</ul>
+		</section>
+
+</footer>
+
+
+	</article>
+</div>
 </body>
 </html>
