@@ -1,24 +1,66 @@
-var yourChoice = prompt('1. Возведение числа в степень \n2. Работа с массивом');
+(function(){
+	var yourChoice = prompt('1. Возведение числа в степень \n2. Работа с массивом');
 
-if (yourChoice == 1){
-var myNum = prompt('Введите число');
-var myPow = prompt('Введите степень числа');
 
-if (isInteger(myNum) == false){
-	console.log('Вы ввели не целое число. Программа округлила '+myNum +
-		' до '+ Math.round(myNum));
-	 myNum = Math.round(myNum);
-} 
+if (yourChoice == 1){ 
+	makePow();} 
+	else if (yourChoice == 2){
+		login();
+	}
+else{
+	alert('Для выбранного варианта нет действий');
+}
 
-if (isInteger(myPow) == false){
-	console.log('Вы ввели не целое число для степени. Программа округлила '+myPow +
-		' до '+ Math.round(myPow));
-	 myPow = Math.round(myPow);
-} 
 
-console.log('Число '+ myNum + ' в степени ' + myPow +
-	' равно ' + myPowFunction(myNum, myPow));
-} else {
+function makePow(){
+var myNum = prompt('Введите целое число');
+var myPow = prompt('Введите степень числа (целое число)');
+
+if (checkNum(myNum) & checkNum(myPow)){
+		console.log('Число '+ myNum + ' в степени ' + myPow +
+	  ' равно ' + myPowFunction(myNum, myPow));
+ } 
+
+function checkNum(numberForCheck){
+
+if (isNaN(numberForCheck)) {
+	console.log('Вы ввели не число!');
+	return false;} else{
+
+  if (isInteger(numberForCheck) == false){
+	 console.log('Вы ввели не целое число!');
+	 return false;} else {return true;}
+}
+
+function isInteger(num) {
+	return (Math.ceil(num) - num == 0) 
+}
+
+}
+
+function myPowFunction(num, pow){
+
+	var n;
+	if (pow == 0){
+		n = 1;
+	} else{
+	n = num;
+	var i = 1;
+	while (i < pow){
+		n *= num;
+		i++;
+	} 
+}
+ if (pow < 0){
+ 	n = 1 / n;
+ }
+return n;
+}
+
+}
+
+
+function login(){
 
 var nameStr = prompt('Введите пять любых имен через запятую');
 var nameArr = new Array(5);
@@ -49,22 +91,6 @@ for (var i = 0; i < myArr.length; i++){
 
 
 
-function isInteger(num) {
-  return (Math.ceil(num) - num == 0) 
-}
 
-function myPowFunction(num, pow){
-	var n;
-	if (pow == 0){
-		n = 1;
-	} else {
-	n = num;
-	var i = 1;
 
-	while (i < pow){
-		n *= num;
-		i++;
-	}
-}
-return n;
-}
+})();
