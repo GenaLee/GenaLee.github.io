@@ -3,7 +3,7 @@ var testPage = {
     createElements: function() {
         body = document.body;
         container = document.createElement('div'),
-            containerHeader = document.createElement('header');
+        containerHeader = document.createElement('header');
         headerText = document.createElement('h3');
         testForm = document.createElement('form');
 
@@ -48,8 +48,7 @@ var testPage = {
 
         function setHeaderTextAttribute() {
             headerText.classList.add('containerHeader__text');
-            // headerText.setAttribute('font-size', '14');
-            headerText.style.fontSize = '22px';
+            headerText.style.fontSize = '18px';
             headerText.setAttribute('color', 'black');
             headerText.innerHTML = 'Тест по программированию';
         };
@@ -74,8 +73,8 @@ var testPage = {
             var questionText = document.createElement('li');
             questionText.classList.add('questionList__text');
             questionText.classList.add('question');
-            questionText.style.fontSize = '26px';
-            questionText.style.margin = '20px 0';
+            questionText.style.fontSize = '20px';
+            questionText.style.margin = '10px 0';
             questionText.innerHTML = i + ". Вопрос №" + i;
 
             questionList.appendChild(questionText);
@@ -83,7 +82,7 @@ var testPage = {
             var answerList = document.createElement('ul');
             answerList.classList.add('question__answerList');
             answerList.classList.add('answerList');
-            answerList.style.margin = '20px 0';
+            answerList.style.margin = '10px 0';
             answerList.style.listStyle = 'none';
             questionText.appendChild(answerList);
 
@@ -98,7 +97,7 @@ var testPage = {
 
                 var answer = document.createElement('label');
                 answer.classList.add('answer__lablel');
-                answer.style.fontSize = '20px';
+                answer.style.fontSize = '18px';
                 answer.innerHTML = 'Вариант ответа №' + k;
                 answer.style.cursor = 'pointer';
                 answer.style.fontWeight = 'normal';
@@ -111,7 +110,7 @@ var testPage = {
                 answerInput.setAttribute('type', 'checkbox');
                 answerInput.style.float = "left";
                 answerInput.style.marginRight = '5px';
-                answerInput.style.fontSize = '20px';
+                answerInput.style.fontSize = '18px';
                 answer.appendChild(answerInput);
             }
         }
